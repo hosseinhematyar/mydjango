@@ -1,1 +1,1 @@
-# Welcome to My First Django project
+# Welcome to my first Django project
