@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<h3>Projects (List of projects)</h3>
+<p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum
+    passage.</p>
+
+<ul>
+    {% for project in projects %}
+    <li>Title: <a href="{% url 'project' project.id %}">{{project.title}}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
